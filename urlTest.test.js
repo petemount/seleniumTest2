@@ -45,7 +45,7 @@ test("Usereingabe des Suchbegriffs", async () => {
 
         // Prüfen, ob der Suchbegriff auch im Seitentext im Titel "Deine Suche..." aufgenommen wurde   
         const zielFeldTest = await driver.findElement(By.xpath('//*[@id="main-content"]/div[1]/div[1]/h1/strong'));
-        expect(await zielFeldTest.getText()).toBe("\"NVME-SSD\"") 
+        expect(await zielFeldTest.getText()).toBe('"NVME-SSD"') 
 
 
     // Optional: Hält die Seite die angegebenen Millisekunden offen.
